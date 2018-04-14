@@ -1,0 +1,153 @@
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Hospedaje Estudiantil</title>
+
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+
+</head>
+<BODY>
+
+<header>
+	<picture>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfwghBuAGNGRwkhEOeqHzalhYZ5mYp86Ic4aohjQWiCfDj4w1izA"/>
+	</picture>
+	<h1>Laboratorio de Consulta Estructurado</h1>
+</header>
+
+	<section id="sec" class="content">
+	<main class="main">
+
+	<div >
+		<h2>Ingreso de Usuario</h2>
+		<form>
+			<ul>
+				<li>
+					<label for="name">Usuario:</label>
+					<input type="text" placeholder="" required />
+					<br>
+					<br>
+					
+				</li>
+
+				<li>
+					<label for="name">clave:</label>
+					<input type="password" placeholder="" required />
+
+					<br>
+					<br>
+					
+				</li>
+
+				<li>
+					<button class="submit" type="submit">Ingresar</button>
+				</li>
+			</ul>
+		</form>	
+	</div>
+
+	</main>
+
+	<main class ="main-r">
+		<h1>Laboratorio SQL</h1>
+
+		<H5>Ingrese al Sistema para poder hacer uso del laboratorio SQL</H5>
+		<div>
+			<picture>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK_hNateWkbqh-4ynZo1MJqYJau_FM_5aIZZ2xyz_0z4AODN5IaA"/>
+			</picture>
+		</div>
+	</main>
+
+	</section>
+	
+	<section >
+		<nav>
+			<ul>
+			<li>
+				<a id="ejm">Ejemplos</a>
+			</li>		
+			<li>
+				<a id="ejr">Ejercicios</a>
+			</li>
+
+			</ul>
+		</nav>
+
+		<div id="ejercicios">
+			<div class="hm">
+<picture>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7BLEJdSwux6-sU8X3iYwfXK434I4XgZykHZjaWX4KStYr6NIY"/>
+</picture>
+<h3>ejemplo de uso de la sentencias de creacion de tablas</h3>
+
+</div>
+
+<div class="hm">
+
+<picture>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnHXa5pj2bF2wEdc96DJcpoxmeHI3ZpFZ3Boqoj4VXicgEz2rc"/>
+</picture>
+
+<h3>ejemplo del uso de la sentencia de insercion de datos en la base de datos</h3>
+
+	
+</div>
+
+<div class="hm">
+
+<picture>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDDczCIA6p4dviDMaWU1IoRn4suzlI09u-7EQs9H62Qxt8WbBS"/>
+</picture>
+
+<h3>Ejemplo de uso de las consultas anidadas con la sentencia IN</h3>
+
+	
+</div>
+
+<div class="hm">
+	<picture>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvgqO8nX5cGhKldvzhbiMF5QjhU0KXe9-P7xCU7PQ1k8sbf_CbNQ"/>
+		</picture>
+
+<h3>ejemplo de uso desentencias DML en la base de datos MySQL</h3>
+
+</div>			
+		</div>
+
+		</section>
+
+
+		<FOOTER>
+
+		<div id="d5">
+
+		<h3>Nombre:Monica Alejandra Ovallos</h3>
+		<h3>codigo:1151100</h3>
+		<h3>carrera: Ingenieria de Sistemas</h3>
+		<h3>semestre 2018 1</h3>
+
+		</div>
+
+		<div id="d6">
+
+		<h3>Actualmente en la asignatura de Programación Web hemos visto css html javascript jquery boostrap</h3>
+		</div>
+	</FOOTER>
+
+	<script src="js/jquery.min.js"></script>
+
+<script>
+	$("#ejm").click(function(event){
+		
+                $("#ejercicios").load('ejemplos.html');
+        });
+
+	$("#ejr").click(function(event){
+                $("#ejercicios").load('ejercicios.html');
+        });
+</script>
+
+</BODY>
+</html>

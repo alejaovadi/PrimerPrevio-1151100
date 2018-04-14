@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+ 
+        <title>TODO supply a title</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="estilos.css" media="screen" />
+      
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<header>
+
+<picture>
+<img src="http://aularagon.catedu.es/materialesaularagon2013/moodle/html/m4/mensajeria.png">
+</picture>
+	
+	<h1>TeEnviamosLoQueSea SAS</h1>
+
+	
+
+</header>
+
+<nav class="navbar navbar-default" style="">
+            <div class="container">
+                <div class="navbar-header">
+                  
+
+                  
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span> 
+<span class="icon-bar"></span> 
+<span class="icon-bar"></span> 
+
+ </button>
+
+                </div>
+                <div class="container collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+
+                    <li>
+                        <a href="#" id="atras" title="atras"><span class="glyphicon glyphicon-arrow-left"></span></a>
+                        </li>
+
+                        <li>
+                        <a href="#" id="login" title="iniciar Sesión"><span class="glyphicon glyphicon-user"></span></a>
+                        </li>
+
+                        
+                       
+                        
+                        <li class="dropdown">
+                        <a href="#"  class="dropdown-toggle" data-toggle="dropdown" title=" Registrar"> <span class="glyphicon glyphicon-list-alt"></span>
+                     <span class="caret" ></span></a>
+
+                        <ul class="dropdown-menu">
+                           <li><a href="#" data-seleccion="registrocliente" > <span class="glyphicon glyphicon-pencil" ></span> <span class="glyphicon glyphicon-trash"></span> Cliente </a></li>
+
+                           <li><a href="#" data-seleccion="RegistrarMensajero"><span class="glyphicon glyphicon-pencil" ></span> <span class="glyphicon glyphicon-trash"></span> Mensajero </a></li>
+
+                           <li><a href="#" data-seleccion="registrarEnvio" ><span class="glyphicon glyphicon-pencil" ></span> <span class="glyphicon glyphicon-trash"></span> Envio </a></li>
+                          
+                        </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+                </div>
+            
+       </nav>
+
+   <section class="content">
+  <main class="main">
+
+  <p> TeEnviamosLoQueSea Ofrece servicios de paquetería y mensajería a nivel mundial muy económicos y adaptados a cada necesidad, con plazos de entrega a partir de 1, 2, 3 días desde origen a diferentes partes del mundo, según se opte por transporte terrestre, marítimo o aéreo.</p>
+
+<div>
+  <picture id="lp" >
+      <img  src ="https://www.ecoweb.com.co/oclock/wp-content/uploads/2018/01/Mensajeria.jpg"/>
+    </picture>
+</div>
+<div>
+    <picture id="lb" >
+      <img  src ="https://guiamexico.com.mx/Imagenes/b/207808527-2-carteo-servicios-de-mensajeria-y-logistica-s-a-de-c-v.jpeg"/>
+    </picture>
+</div>
+
+
+
+  </main>
+     </section>
+
+
+   
+
+     <footer>
+
+	<a href="https://www.facebook.com/AlejaN.ovallos">SIGUENOS EN FACEBOOK</a>
+
+	<H4>Cll 4# 4-36 Naranjos</H4>
+	<H4>Tel.5782353</H4>
+		
+
+	</footer>
+
+
+
+
+
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+         <script>
+    
+     $("#login").click(function(event){
+   $("main").load('iniciarSesion.html');
+        });
+
+
+     $("#atras").click(function(event){
+
+      location.reload();
+     
+        });
+
+
+    $("li a").click(function(event){
+            event.preventDefault();
+            if($(this).data('seleccion')!=null){
+                $("main").load($(this).data('seleccion')+'.html');
+            }
+        });
+
+
+        </script>
+
+       </body>
+       </html>
+
